@@ -87,8 +87,69 @@ ul, ol {
 }
 
 /* =============== Android =============== */
+/* ================ PREMERA =============== */
+/* .container {
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    @media screen and (width: 480px) {
+    width: 396px;
+    }
+    
+    @media screen and (width: 768px) {
+    width: 736px;
+    }
+
+    @media screen and (width: 1200px) {
+    width: 1158;
+    }
+
+
+} */
+
+
+
+
+
+
+
+
+/* ================ PREMERA =============== */
+
+/* ============== menu-btn =============== */
+
+/* .mobail-menu-btn {
+display: inline-flex;
+margin: 0;
+padding: 0;
+border: none;
+background-color: transparent;
+
+} */
+
+/* .mobail-menu-btn .icon-cross {
+    display: none;
+}
+
+.mobail-menu-btn.js-open-menu .icon-cross {
+    display: block;
+}
+
+.mobail-menu-btn.js-open-menu .icon-burger {
+    display: none;
+}
+
+.icon-burger {
+
+} */
+
+
+/* ============== menu-btn =============== */
 
 .pege-header {
+    position: relative;
     height: 70px;
     left: 0px;
     top: 0px;
@@ -191,7 +252,7 @@ ul, ol {
     /* ========= Меню позіціювання сторынки ========= */
     
     .hero {
-    display: flex;
+    display: block;
     text-align: center;
     margin: 0 auto;
     background-color: var(--primary-brand-color);
@@ -231,21 +292,25 @@ ul, ol {
     justify-content: space-between;
     }
 
-    .mobail-menu-btn {
+    /* .mobail-menu-btn {
     background-color: transparent;
     padding: 0;
     border: none;
     line-height: 0;
     padding-right: 16px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    }
+    } */
 
     .mobaile-menu {
-    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 60px 40px 40px;
+
+    position: absolute;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     max-height: 796px;
-    top: 0;
+    top: 100%;
     left: 0;
     z-index: 1000;
     background: var(--white-color);
@@ -254,33 +319,23 @@ ul, ol {
     pointer-events: none;
     visibility: hidden;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-    }
-
-    .mobaile-menu-container {
-    display: flex;
-    flex-direction: column;
+    
     }
 
     .mobaile-menu.is-open {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
-    transition: opacity 500ms linear, visibility 500ms linear;
+    transition: opacity 300ms linear, visibility 300ms linear;
     }
 
-    .mobaile-menu-container {
-    position: relative;
-    padding: 80px 60px 40px 40px;
-    }
-
-    .mobaile-menu-btn-close {
+    .icon-cross {
     border-color: transparent;
     border: none;
     line-height: 0;
-    position: absolute;
-    top: 25px;
-    right: 20px;
+    /* position: absolute; */
+    /* top: 25px;
+    right: 20px; */
     padding: 0;
 
     width: 24px;
@@ -291,6 +346,40 @@ ul, ol {
     border: 1px solid rgba(0, 0, 0, 0.1);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
+
+    .menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-color: transparent;
+
+    }
+
+.menu-button .icon-cross {
+    display: none;
+}
+
+.menu-button.is-open .icon-cross {
+    display: block;
+}
+
+.menu-button.is-open .icon-burger {
+    display: none;
+}
+
+/* .icon-cross.js-close-menu {
+    display: block;
+} */
+/* .icon-burger.js-close-menu {
+    display: none;
+} */
+
+.icon-burger {
+    
+}
+
+
 
     .mobail-navigation-item:not(:last-child) {
     margin-bottom: 40px;
@@ -413,7 +502,11 @@ ul, ol {
     }
 }
 
-    @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+
+/* +++++++++++++++ Mobail +++++++++++++++ */
+
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
     screen and (min-resolution: 192dpi) and (max-width: 767px),
     screen and (min-resolution: 2dppx) and (max-width: 767px) {
         .hero-style {
@@ -422,7 +515,6 @@ ul, ol {
         }
     }
 
-/* +++++++++++++++ Mobail +++++++++++++++ */
 
 /* +++++++++++++++ Tablet +++++++++++++++ */
 
@@ -504,14 +596,15 @@ ul, ol {
     }
     
     .hero-title {
+    display: block;
     text-align: center;
-
     font-weight: 500;
-    font-size: 36px;
-    line-height: 1.1;
+    font-size: 56px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-right: auto;
+    margin-left: auto;
 
-    text-transform: capitalize;
     color: var(--white-color);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
@@ -521,7 +614,9 @@ ul, ol {
     }
 
     .hero-style  {
-    padding: 188px 473px 292px 473px;
+    max-width: 1600px;
+    padding-top: 188px;
+    padding-bottom: 292px;
     margin-right: auto;
     margin-left: auto;
     background-position: center;
