@@ -66,82 +66,61 @@ ul, ol {
 /*  */
 /* =============================== ROOT ============================= */
 /* +++++++++++++++ Mobail Container +++++++++++++++ */
-.container {
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
 .gadget-activ:hover, 
 .gadget-activ:active {
     color: var(--primary-brand-color);
 }
 
-/* +++++++++++++++ Mobail +++++++++++++++ */
-@media screen and (min-width: 480px) {
-    .container {
-        width: 426px;
-        margin-right: auto;
-        margin-left: auto;
-    }  
+/* ================= Контейнер =============== */
 
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
-/* =============== Android =============== */
-/* ================ PREMERA =============== */
-/* .container {
-    padding-right: 16px;
-    padding-left: 16px;
-    margin-right: auto;
-    margin-left: auto;
-    
-    @media screen and (width: 480px) {
-    width: 396px;
-    }
-    
-    @media screen and (width: 768px) {
-    width: 736px;
-    }
+/* +++++++++++++++ Mobail +++++++++++++++ */
 
-    @media screen and (width: 1200px) {
-    width: 1158;
-    }
+@media screen and (max-width: 480px) {
+    .container {
+        width: 428px;
+        /* margin-right: auto;
+        margin-left: auto; */
+    }  
+}
+/* +++++++++++++++ Mobail +++++++++++++++ */
+/* ================ Tablet =============== */
 
+@media screen and (min-width: 768px) {
+    .container {
+        width: 736px;
+        
+    }  
+}
 
-} */
+/* ================ Tablet =============== */
+/* ================ Desktop ================ */
 
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1158px;
+        
+    }  
+}
 
+/* ================ Desktop ================ */
 
-
-
-
-
-
-/* ================ PREMERA =============== */
 
 /* ============== menu-btn =============== */
 
-/* .mobail-menu-btn {
+/* .btn-mobail-menu-open {
 display: inline-flex;
 margin: 0;
 padding: 0;
 border: none;
 background-color: transparent;
-
-} */
-
-/* .mobail-menu-btn .icon-cross {
-    display: none;
 }
 
-.mobail-menu-btn.js-open-menu .icon-cross {
-    display: block;
-}
-
-.mobail-menu-btn.js-open-menu .icon-burger {
-    display: none;
-}
-
-.icon-burger {
+.mobaile-menu-btn-close {
 
 } */
 
@@ -284,6 +263,7 @@ background-color: transparent;
     .nav-menu {
     display: none;
     }
+
     .contacts {
         display: none;
     }
@@ -292,33 +272,46 @@ background-color: transparent;
     justify-content: space-between;
     }
 
-    /* .mobail-menu-btn {
+    .btn-mobail-menu-open {
     background-color: transparent;
     padding: 0;
     border: none;
     line-height: 0;
-    padding-right: 16px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    } */
+    }
+    
+    .page-header {
+    padding: 24px 16px;
+    border-bottom: 1px solid var(--accent-color);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 1px 6px rgba(46, 47, 66, 0.08);
+    }
 
     .mobaile-menu {
+    position: fixed;    
     display: flex;
     flex-direction: column;
-    padding: 80px 60px 40px 40px;
 
-    position: absolute;
     width: 100%;
-    /* height: 100%; */
-    max-height: 796px;
-    top: 100%;
+    height: 100%;
+    top: 0;
     left: 0;
+    /* padding: 80px 60px 40px 40px; */
     z-index: 1000;
-    background: var(--white-color);
-
     opacity: 0;
-    pointer-events: none;
+    pointer-events: auto;
     visibility: hidden;
+    background: var(--white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    }
+
+    .mobaile-menu-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 80px 51px 40px 40px;
+        height: 100%;
     
     }
 
@@ -329,19 +322,20 @@ background-color: transparent;
     transition: opacity 300ms linear, visibility 300ms linear;
     }
 
-    .icon-cross {
-    border-color: transparent;
-    border: none;
-    line-height: 0;
-    /* position: absolute; */
-    /* top: 25px;
-    right: 20px; */
-    padding: 0;
+    .mobaile-menu-btn-close {
+    position: absolute;
 
     width: 24px;
     height: 24px;
-
     border-radius: 50%;
+
+    border-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+
+    top: 25px;
+    right: 20px;
     background: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -353,47 +347,21 @@ background-color: transparent;
     padding: 0;
     border: none;
     border-color: transparent;
-
     }
-
-.menu-button .icon-cross {
-    display: none;
-}
-
-.menu-button.is-open .icon-cross {
-    display: block;
-}
-
-.menu-button.is-open .icon-burger {
-    display: none;
-}
-
-/* .icon-cross.js-close-menu {
-    display: block;
-} */
-/* .icon-burger.js-close-menu {
-    display: none;
-} */
-
-.icon-burger {
-    
-}
-
-
 
     .mobail-navigation-item:not(:last-child) {
     margin-bottom: 40px;
     }
 
-    .mobail-navigation-item:last-child {
+    /* .mobail-navigation-item:last-child {
     margin-bottom: 284px;
-    }
+    } */
 
     .mobaile-contact-user-list {
     margin-bottom: 40px;
     }
 
-    .mobaile-contact-phone-activ {
+    .mobaile-contact-phone {
     font-weight: 600;
     font-size: 30px;
     line-height: 1.1;
@@ -428,10 +396,15 @@ background-color: transparent;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
+    .mobaile-contact-wrapper {
+        margin-top: auto;
+    }
+
     .mobaile-social-network {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 40px;
     }
 
     .mobaile-social-network-item {
@@ -526,7 +499,7 @@ background-color: transparent;
     .mobaile-menu {
         display: none;
     }
-    .mobail-menu-btn {
+    .btn-mobail-menu-open {
         display: none;
     }
 
@@ -548,7 +521,7 @@ background-color: transparent;
         margin-top: 40px;
     }
     
-        .hero-title {
+    .hero-title {
     text-align: center;
     width: 492px;
     font-weight: 500;
