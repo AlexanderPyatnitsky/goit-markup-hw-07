@@ -1,54 +1,72 @@
-:root {
-    --primary-brand-color: #4D5AE5;
-    --dark-color: #2E2F42;
-    --success-color: #31D0AA;
-    --body-text-color: #434455;
-    --subtle-text-color: #8E8F99;
-    --accent-color: #E7E9FC;
-    --light-color: #F4F4FD;
-    --white-color: #FFFFFF;
-    --blue-button: #404BBF;
-    --modal: #FCFCFC;
+/* Reset styles */
 
-}
-h1,h2,h3,h4,p {
-    margin-top: 0;
-    margin-bottom: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-ul,li {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-
-}img {
-    display: block;
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
 }
 
-button {
-    cursor: pointer;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    color: var(--body-text-color);
-    background-color: var(--white-color);
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-ul, ol {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style: none;
+button {
+ cursor: pointer;
 }
 
+.visual-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--body-text-color);
+  background-color: var(--white-color);
+}
+
+:root {
+  --primary-brand-color: #4D5AE5;
+  --dark-color: #2E2F42;
+  --success-color: #31D0AA;
+  --body-text-color: #434455;
+  --subtle-text-color: #8E8F99;
+  --accent-color: #E7E9FC;
+  --light-color: #F4F4FD;
+  --white-color: #FFFFFF;
+  --blue-button: #404BBF;
+  --modal: #FCFCFC;
+  --trans-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 /* .container {
     width: 1158px;
     margin-left: auto;
@@ -74,105 +92,63 @@ ul, ol {
 /* ================= Контейнер =============== */
 
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* +++++++++++++++ Mobail +++++++++++++++ */
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
     .container {
         width: 428px;
-        /* margin-right: auto;
-        margin-left: auto; */
+        margin-right: auto;
+        margin-left: auto;
     }  
-}
-/* +++++++++++++++ Mobail +++++++++++++++ */
-/* ================ Tablet =============== */
-
-@media screen and (min-width: 768px) {
-    .container {
-        width: 736px;
-        
-    }  
-}
-
-/* ================ Tablet =============== */
-/* ================ Desktop ================ */
-
-@media screen and (min-width: 1200px) {
-    .container {
-        width: 1158px;
-        
-    }  
-}
-
-/* ================ Desktop ================ */
-
-
-/* ============== menu-btn =============== */
-
-/* .btn-mobail-menu-open {
-display: inline-flex;
-margin: 0;
-padding: 0;
-border: none;
-background-color: transparent;
-}
-
-.mobaile-menu-btn-close {
-
 } */
+/* +++++++++++++++ Mobail +++++++++++++++ */
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ============== menu-btn =============== */
 
-.pege-header {
-    position: relative;
-    height: 70px;
-    left: 0px;
-    top: 0px;
-
-    padding-top: 24px;
-    padding-bottom: 24px;
-
-    background: #FFFFFF;
-    border-bottom: 1px solid #E7E9FC;
+    .pege-header {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
-                0px 1px 1px rgba(46, 47, 66, 0.16), 
-                0px 1px 6px rgba(46, 47, 66, 0.08);
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 1px 6px rgba(46, 47, 66, 0.08);
     }
 
     .logo-header {
     font-weight: 800;
     font-size: 18px;
-    line-height: 1.16;
+    line-height: 1.33;
     text-transform: uppercase;
-    margin-right: 76px;
     color: var(--dark-color);
     letter-spacing: 0.03em;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
 
+    .pege-header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
     .logo-header-accent {
     color: #4D5AE5;
     }
-
-    .logo {
-    display: flex;
-    align-content: center;
-    }
-
-    .pege-header-box {
-    display: flex;
-    align-content: center;
-    }
     
-    .nav-menu {
-        display: flex;
-        align-content: center;
-    }
-
     .menu-item {
     font-weight: 500;
     font-size: 16px;
@@ -183,51 +159,37 @@ background-color: transparent;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .menu-item:focus {
+    .menu-item:focus, .menu-item:hover, .menu-item:active {
     color: var(--primary-brand-color);
     }
 
-    .menu-list:not(:last-child) {
-    margin-right: 40px;
-    }
-
-    .contact {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.02em;
-    color: var(--body-text-color);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .contact-email:hover, .contact-email:focus, .contact-email:active,
+    .contact-phone:hover, .contact-phone:focus, .contact-phone:active {
+        color: var(--primary-brand-color);
     }
     
-    .contact-list:first-child {
-        margin-bottom: 4px;
-        display: flex;
+    /* @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+        .hero-style {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7),  rgb(46, 47, 66, 0.7)),
+                url(../images_set/desktop-people-office@2x.jpg);
+        }
+    } */
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+        .hero-style {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7),  rgb(46, 47, 66, 0.7)),
+                url(../images_set/desktop-people-office@2x.jpg);
+        }
     }
 
-    .contact:hover,
-    .contact:focus {
-    color: var(--primary-brand-color);
-    }
-/* ========= Меню позіціювання сторынки ========= */
-    .menu-list {
-    position: relative;
-    }
 
-    .menu-activ::after {
-    content: "";
-    position: absolute;
-    height: 4px;
-    width: 100%;
 
-    background-color: var(--primary-brand-color);
-    border-radius: 2px;
 
-    bottom: 0;
-    left: 0;
-    top: 42px;
-    }
+    
     /* ========= Меню позіціювання сторынки ========= */
     
     .hero {
@@ -258,9 +220,15 @@ background-color: transparent;
 /* =============== Android =============== */
 
 /* +++++++++++++++ Mobail +++++++++++++++ */
+/* від 0px до 767px */
 
 @media screen and (max-width: 767px) {
-    .nav-menu {
+    
+    .container {
+        max-width: 428px;
+    }
+
+    .page-nav {
     display: none;
     }
 
@@ -268,8 +236,12 @@ background-color: transparent;
         display: none;
     }
 
-    .pege-header-box {
-    justify-content: space-between;
+
+    .pege-header {
+    padding: 24px 16px;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 1px 6px rgba(46, 47, 66, 0.08);
     }
 
     .btn-mobail-menu-open {
@@ -280,14 +252,6 @@ background-color: transparent;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
     
-    .page-header {
-    padding: 24px 16px;
-    border-bottom: 1px solid var(--accent-color);
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
-    0px 1px 1px rgba(46, 47, 66, 0.16), 
-    0px 1px 6px rgba(46, 47, 66, 0.08);
-    }
-
     .mobaile-menu {
     position: fixed;    
     display: flex;
@@ -297,7 +261,6 @@ background-color: transparent;
     height: 100%;
     top: 0;
     left: 0;
-    /* padding: 80px 60px 40px 40px; */
     z-index: 1000;
     opacity: 0;
     pointer-events: auto;
@@ -431,14 +394,14 @@ background-color: transparent;
     
     .hero-style {
     width: 428px;
-    padding: 112px 56px 240px 54px;
+    padding: 112px 55px 112px 55px;
     margin-right: auto;
     margin-left: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),  rgb(46, 47, 66, 0.7)),
-    url(../images_set/mobile-people-office.jpg);
+    url(../images_set/desktop-people-office@2x.jpg);
     }
     
     .hero-title {
@@ -473,38 +436,104 @@ background-color: transparent;
                 box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), 
                 border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-}
 
-
-/* +++++++++++++++ Mobail +++++++++++++++ */
-
-
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-    screen and (min-resolution: 192dpi) and (max-width: 767px),
-    screen and (min-resolution: 2dppx) and (max-width: 767px) {
-        .hero-style {
-                background-image: linear-gradient(rgba(46, 47, 66, 0.7),  rgb(46, 47, 66, 0.7)),
-                url(../images_set/desktop-people-office@2x.jpg);
-        }
+    .list-advantage > .advantage-icon {
+        display: none;
     }
 
+    .section-advantage {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    }
+    
+    .list-advantage {
+    display: block;
+    padding-left: auto;
+    
+    
+
+}
+
+/* +++++++++++++++ Mobail +++++++++++++++ */
 
 /* +++++++++++++++ Tablet +++++++++++++++ */
 
 @media screen and (min-width: 768px) {
     .container {
-        width: 766px;
+        max-width: 768px;
+    }
+
+    .page-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-list:not(:last-child) {
+    margin-right: 40px;
+    }
+
+    .menu-list {
+    position: relative;
+    }
+/* === Меню позіціювання сторынки === */
+    .menu-activ::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+
+    background-color: var(--primary-brand-color);
+    border-radius: 2px;
+
+    bottom: 0;
+    left: 0;
+    }
+/* === Меню позіціювання сторынки === */
+    .contacts {
+        display: block;
+    }
+
+    .contact-list {
+        position: relative;
+    }
+
+    .contact-list:first-child {
+        margin-bottom: 4px;
+    }
+
+    .contact-email {
+        padding-top: 16px;
+    }
+    
+    .contact-phone {
+        padding-bottom: 16px;
+    }
+
+    .contact-email, .contact-phone {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: var(--body-text-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: color var(--trans-dur-and-func)
+    }
+
+    .menu-item {
+        padding-top: 16px;
     }
 
     .mobaile-menu {
         display: none;
     }
+
     .btn-mobail-menu-open {
         display: none;
-    }
-
-    .contacts {
-        margin-left: auto;
     }
 
     .hero-style  {
@@ -530,9 +559,16 @@ background-color: transparent;
     letter-spacing: 0.02em;
     color: var(--white-color);
     }
-} 
 
 
+
+}
+
+@media screen and (max-width:768px) {
+    .ontainer {
+        max-width: 428px;
+    }
+}
 
 /* +++++++++++++++ Tablet +++++++++++++++ */
 
@@ -541,11 +577,13 @@ background-color: transparent;
 @media screen and (min-width: 1200px) {
 
     .container {
-        width: 1158px;
-    } 
+    max-width: 1158px;
+    }
 
-    .logo-header {
-        line-height: 1.33;
+    .menu-item-box {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     }
 
     .contact {
@@ -566,6 +604,16 @@ background-color: transparent;
     .contact-list:first-child {
         margin-right: 40px;
         margin-bottom: 0;
+    }
+
+    .contact-email, .contact-phone {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 0;
+    }
+
+    .contact-phone {
+        padding-bottom: 0;
     }
     
     .hero-title {
@@ -598,23 +646,33 @@ background-color: transparent;
     background-size: cover;
     }
 
+    
 
 
 
-
-
-
+    
 
 
 
 }
 
+
+/* .menu-item-box {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+} */
+
 /* +++++++++++++++ Desktop +++++++++++++++ */
 
 
-
-
-
+@media screen and (max-width: 1199px) {
+    .menu-item.menu-item-box {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+}
 
 
 

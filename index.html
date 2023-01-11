@@ -14,118 +14,110 @@
 <body>
     <header class="pege-header">
         <div class="pege-header-box container">
-            <nav class="logo">
+            
                 <!--Шапка сторінки-->
-                <a class="logo-header" href="index.html"><span class="logo-header-accent">web</span>studio</a>
+            <a class="logo-header" href="index.html"><span class="logo-header-accent">web</span>studio</a>
                 
-                    <!--Навігація на інші сторінки-->
-                <ul class="nav-menu current-page">
-
-                    <li class="menu-list">
-                        <a class="menu-item menu-activ" href="index.html">Studio</a>
-                    </li>
-                    <li class="menu-list">
-                        <a class="menu-item" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="menu-list">
-                        <a class="menu-item" href="#">Contacts</a>
-                    </li>
-
-                </ul>
-
-                <!-- <button class="menu-button is-open" type="button"> 
-                    <svg class="mobail-menu-icon" width="32" height="22">
-                        <use class="icon-burger" href="./images/sprite.svg#hamburger-icon"></use>
-                    </svg>
-                </button> -->
-
-                <div class="mobaile-menu js-menu-container">
-
-                    <div class="container mobaile-menu-container">
-
-                    <button class="mobaile-menu-btn-close js-close-menu">
-                            <svg class="mobaile-menu-btn-icon" width="8" height="8">
-                                <use href="./images/sprite.svg#icon-close-black-18dp-2-1"></use>
-                            </svg>
-                    </button>
-
-                    <ul class="mobail-navigation-list">
-                        <li class="mobail-navigation-item">
-                            <a class="mobail-navigation-linc" href="./index.html">Studio</a>
-                        </li>
-                        <li class="mobail-navigation-item">
-                            <a class="mobail-navigation-linc" href="./portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="mobail-navigation-item">
-                            <a class="mobail-navigation-linc" href="#">Contacts</a>
-                        </li>
-                    </ul>
-                    <div class="mobaile-contact-wrapper">
-                        <ul class="mobaile-contact-user">
-                            <li class="mobaile-contact-user-list">
-                                <a class="mobaile-contact-phone" href="tel:+110001111111">+11 (000) 111-11-11</a>
-                            </li>
-                            <li class="mobaile-contact-user-list">
-                                <a class="mobaile-contact-email-linc gadget-activ" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                            </li>
-                        </ul>
-                        <ul class="mobaile-social-network">
-                            <li class="mobaile-social-network-list">
-                                <a href="#" class="mobaile-social-network-item">
-                                <svg class="mobaile-social-network-icon" width="24" height="24">
-                                    <use href="./images/sprite.svg#icon-instagram-1"></use>
-                                </svg>
-                                </a>
-                            </li>
-                            <li class="mobaile-social-network-list">
-                                <a href="#" class="mobaile-social-network-item">
-                                <svg class="mobaile-social-network-icon" width="24" height="24">
-                                    <use href="./images/sprite.svg#icon-twitter-1"></use>
-                                </svg>
-                                </a>
-                            </li>
-                            <li class="mobaile-social-network-list">
-                                <a href="#" class="mobaile-social-network-item">
-                                <svg class="mobaile-social-network-icon" width="24" height="24">
-                                    <use href="./images/sprite.svg#icon-facebook-1"></use>
-                                </svg>
-                                </a>
-                            </li>
-                            <li class="mobaile-social-network-list">
-                                <a href="#" class="mobaile-social-network-item">
-                                <svg class="mobaile-social-network-icon" width="24" height="24">
-                                    <use href="./images/sprite.svg#icon-linkedin-1"></use>
-                                </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    </div>
-
-                </div>
-
-            </nav>
-
-            <!-- Мобільна кнопка меню -->
-            <button class="btn-mobail-menu-open js-open-menu" type="button"> 
+                <!-- Мобільна кнопка меню -->
+            <button class="btn-mobail-menu-open js-open-menu" 
+            type="button" 
+            aria-expanded="false" 
+            aria-controls="mobile-menu"> 
                     <svg class="mobail-menu-icon" width="32" height="22">
                         <use href="./images/sprite.svg#hamburger-icon"></use>
                     </svg>
             </button>
-
+            <nav class="page-nav">
+                    <!--Навігація на інші сторінки-->
+            <ul class="nav-menu current-page">
+                <li class="menu-list">
+                    <a class="menu-item menu-activ menu-item-box" href="index.html">Studio</a>
+                </li>
+                <li class="menu-list">
+                    <a class="menu-item menu-item-box" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="menu-list">
+                    <a class="menu-item menu-item-box" href="#">Contacts</a>
+                </li>
+            </ul>
+            </nav>
+        
                 <!-- Контакти -->
+
             <ul class="contacts">
 
                 <li class="contact-list">
-                    <a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <a class="contact-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
                 <li class="contact-list">
-                    <a class="contact" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    <a class="contact-phone" href="tel:+110001111111">+11 (000) 111-11-11</a>
                 </li>
                 
             </ul>
         </div>
-        
+        <div class="mobaile-menu js-menu-container">
+            <div class="container mobaile-menu-container">
+
+                <button class="mobaile-menu-btn-close js-close-menu">
+                        <svg class="mobaile-menu-btn-icon" width="8" height="8">
+                            <use href="./images/sprite.svg#icon-close-black-18dp-2-1"></use>
+                        </svg>
+                </button>
+
+                <ul class="mobail-navigation-list">
+                    <li class="mobail-navigation-item">
+                        <a class="mobail-navigation-linc" href="./index.html">Studio</a>
+                    </li>
+                    <li class="mobail-navigation-item">
+                        <a class="mobail-navigation-linc" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="mobail-navigation-item">
+                        <a class="mobail-navigation-linc" href="#">Contacts</a>
+                    </li>
+                </ul>
+
+                <div class="mobaile-contact-wrapper">
+                    <ul class="mobaile-contact-user">
+                        <li class="mobaile-contact-user-list">
+                            <a class="mobaile-contact-phone" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        </li>
+                        <li class="mobaile-contact-user-list">
+                            <a class="mobaile-contact-email-linc gadget-activ" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="mobaile-social-network">
+                        <li class="mobaile-social-network-list">
+                            <a href="#" class="mobaile-social-network-item">
+                            <svg class="mobaile-social-network-icon" width="24" height="24">
+                                <use href="./images/sprite.svg#icon-instagram-1"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="mobaile-social-network-list">
+                            <a href="#" class="mobaile-social-network-item">
+                            <svg class="mobaile-social-network-icon" width="24" height="24">
+                                <use href="./images/sprite.svg#icon-twitter-1"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="mobaile-social-network-list">
+                            <a href="#" class="mobaile-social-network-item">
+                            <svg class="mobaile-social-network-icon" width="24" height="24">
+                                <use href="./images/sprite.svg#icon-facebook-1"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="mobaile-social-network-list">
+                            <a href="#" class="mobaile-social-network-item">
+                            <svg class="mobaile-social-network-icon" width="24" height="24">
+                                <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                            </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main class="main">
@@ -142,8 +134,8 @@
 
         </section>
 
-            <!--Приклади інструментів-->
-        <!-- <section class="section-advantage section">
+            <!-- Приклади інструментів -->
+        <section class="section-advantage section">
 
             <div class="advantage-box container">
 
@@ -213,7 +205,7 @@
                 </ul>
             </div>
 
-        </section>     -->
+        </section>    
 
             <!--Приклади робіт-->
         <!-- <section class="work-examples section">
