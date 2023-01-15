@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="pege-header">
-        <div class="pege-header-box container">
+    <header class="page-header">
+        <div class="container page-header-box">
             
                 <!--Шапка сторінки-->
-            <a class="logo-header" href="index.html"><span class="logo-header-accent">web</span>studio</a>
+            <a class="logo" href="index.html">web<span class="logo-black">studio</span></a>
                 
                 <!-- Мобільна кнопка меню -->
-            <button class="btn-mobail-menu-open js-open-menu" 
+            <button class="mobile-menu-open js-open-menu" 
             type="button" 
             aria-expanded="false" 
             aria-controls="mobile-menu"> 
@@ -122,13 +122,13 @@
 
     <main class="main">
         
-        <section class="hero hero-style container">
+        <section class="hero hero-style">
 
-            <div class="hero-box">
+            <div class="hero-box container">
 
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
 
-                <button class="button" type="button" data-modal-open>Order Service</button>
+                <button class="button-hero" type="button" data-modal-open>Order Service</button>
 
             </div>
 
@@ -205,9 +205,9 @@
                 </ul>
             </div>
 
-        </section>    
+        </section>
 
-            <!--Приклади робіт-->
+            <!--Приклади робіт -->
         <section class="work-examples section">
 
         <div class="work-box container">
@@ -239,8 +239,13 @@
             <h2 class="two-header">Our Team</h2>
             <ul class="team-title">
                 <li class="team-list">
-                    <img src="images/Foto1.jpg" alt="foto" width="264" height="260">
+                    <picture>
+                        <source srcset=""
+                            type="image/webp">
+                        <source srcset="">
 
+                    <img src="images/Foto1.jpg" alt="foto" width="264" height="260">
+                    </picture>
                     <div class="team-card">
                         <h3 class="name">Mark Guerrero</h3>
                         <p class="profession">Product Designer</p>
@@ -458,9 +463,9 @@
     <!--Підвал сторінки-->
     <footer class="footer">
         <div class="footer-box container">
-            <div class="pege-footer-container">
+            <div class="page-footer-container">
 
-                <a class="logo-footer" href="index.html"><span class="logo-footer-accent">web</span>studio</a>
+                <a class="logo" href="index.html">web<span class="logo-white">studio</span></a>
                 <p class="footer-text">
                 Increase the flow of customers and sales
                 for your business with digital marketing & growth solutions.
