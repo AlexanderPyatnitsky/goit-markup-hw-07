@@ -47,10 +47,10 @@
             <ul class="contacts">
 
                 <li class="contact-list">
-                    <a class="contact-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <a class="contact-email contact-linc-box" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
                 <li class="contact-list">
-                    <a class="contact-phone" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    <a class="contact-phone contact-linc-box" href="tel:+110001111111">+11 (000) 111-11-11</a>
                 </li>
                 
             </ul>
@@ -66,7 +66,7 @@
 
                 <ul class="mobail-navigation-list">
                     <li class="mobail-navigation-item">
-                        <a class="mobail-navigation-linc" href="./index.html">Studio</a>
+                        <a class="mobail-navigation-linc act" href="./index.html">Studio</a>
                     </li>
                     <li class="mobail-navigation-item">
                         <a class="mobail-navigation-linc" href="./portfolio.html">Portfolio</a>
@@ -216,15 +216,27 @@
 
             <ul class="work-examples-list">
                 <li class="work-linc">
-                    <img src="images/Rectangle71.jpg" alt="products" width="360">
+                    <picture>
+                        <source srcset="images/img1.webp 1x, images/img1@2x.webp 2x" type="image/webp" />
+                        <source srcset="images/img1.jpg 1x, images/img1@2x.jpg 2x" />
+                        <img src="images/Rectangle71.jpg" alt="Nettop" width="360">
+                    </picture>
                 </li>
         
                 <li class="work-linc">
-                    <img src="images/img(1).jpg" alt="products" width="360">
+                    <picture>
+                        <source srcset="images/img2.webp 1x, images/img2@2x.webp 2x" type="image/webp" />
+                        <source srcset="images/img2.jpg 1x, images/img2@2x.jpg 2x" />
+                        <img src="images/img(1).jpg" alt="Our App" width="360">
+                    </picture>
                 </li>
         
                 <li class="work-linc">
-                    <img src="images/img.jpg" alt="products" width="360">
+                    <picture>
+                        <source srcset="images/img3.webp 1x, images/img3@2x.webp 2x" type="image/webp" />
+                        <source srcset="images/img3.jpg 1x, images/img3@2x.jpg 2x" />
+                        <img src="images/img.jpg" alt="Integration" width="360">
+                    </picture>
                 </li>
             </ul>
 
@@ -240,11 +252,9 @@
             <ul class="team-title">
                 <li class="team-list">
                     <picture>
-                        <source srcset=""
-                            type="image/webp">
-                        <source srcset="">
-
-                    <img src="images/Foto1.jpg" alt="foto" width="264" height="260">
+                        <source srcset="images/photo1.webp 1x, images/photo1@2x.webp 2x" type="image/webp" />
+                        <source srcset="images/photo1.jpg 1x, images/photo1@2x.jpg 2x" />
+                        <img src="images/Foto1.jpg" alt="foto" width="264" height="260">
                     </picture>
                     <div class="team-card">
                         <h3 class="name">Mark Guerrero</h3>
@@ -284,8 +294,11 @@
                 </li>
         
                 <li class="team-list">
-                    <img src="images/Foto2.jpg" alt="foto" width="264" height="260">
-
+                    <picture>
+                        <source srcset="images/photo2.webp 1x, images/photo2@2x.webp 2x" type="image/webp" />
+                        <source srcset="images/photo2.jpg 1x, images/photo2@2x.jpg 2x" />
+                        <img src="images/Foto2.jpg" alt="foto" width="264" height="260">
+                    </picture>
                     <div class="team-card">
                         <h3 class="name">Tom Ford</h3>
                         <p class="profession">Frontend Developer</p>
@@ -324,8 +337,11 @@
                 </li>
             
                 <li class="team-list">
-                    <img src="images/Foto3.jpg" alt="foto" width="264" height="260">
-
+                    <picture>
+                        <source srcset="images/photo3.webp 1x, images/photo3@2x.webp 2x" type="image/webp" />
+                        <source srcset="images/photo3.jpg 1x, photo3@2x.jpg 2x" />
+                        <img src="images/Foto3.jpg" alt="foto" width="264" height="260">
+                    </picture>
                     <div class="team-card">
                         <h3 class="name">Camila Garcia</h3>
                         <p class="profession">Marketing</p>
@@ -364,8 +380,11 @@
                 </li>
             
                 <li class="team-list">
-                    <img src="images/Foto4.jpg" alt="foto" width="264" height="260">
-
+                    <picture>
+                        <source srcset="images/photo4.webp 1x, images/photo4@2x.webp 2x" type="image/webp" />
+                        <source srcset="images/photo4.jpg 1x, photo4@2x.jpg 2x" />
+                        <img src="images/Foto4.jpg" alt="foto" width="264" height="260">
+                    </picture>
                     <div class="team-card">
                         <h3 class="name">Daniel Wilson</h3>
                         <p class="profession">UI Designer</p>
@@ -566,11 +585,13 @@
 
                     <span class="modal-uzer">Phone</span>
                     <span class="icon-form-box">
-                        <input class="modal-form-input" type="tel"
+                        <input class="modal-form-input" 
+                        type="tel"
                         name="uzer_tel"
                         required
-                        pattern="^[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}+$"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                         title="xxx-xxx-xx-xx"
+                        minlength="5"
                         >
                         <svg class="icon-form" width="18" height="24">
                             <use href="./images/sprite.svg#icon-phone"></use>
@@ -582,10 +603,11 @@
                 <label class="modal-form-field">
                     <span class="modal-uzer">Email</span>
                     <span class="icon-form-box">
-                        <input class="modal-form-input" type="email"
+                        <input class="modal-form-input" 
+                        type="email"
                         name="uzer_email"
                         required
-                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"
+                        minlength="3"
                         >
                         <svg class="icon-form" width="18" height="24">
                             <use href="./images/sprite.svg#icon-email"></use>
