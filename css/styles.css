@@ -309,7 +309,6 @@ a.act {
 
 .hero-title {
   display: block;
-  width: 318px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -944,7 +943,7 @@ a.act {
   }
 
   .hero-style {
-  padding: 112px 55px;
+  padding: 112px 20px;
   }
 
   .hero-title {
@@ -974,7 +973,7 @@ a.act {
   }
 
   .list-advantage {
-  min-width: 396px;
+  width: 396px;
   }
 /* ============== Advantage ============== */
 .work-examples {
@@ -1027,7 +1026,6 @@ a.act {
 
 .social-media-title {
   text-align: center;
-  margin-top: 72px;
 }
 
 .social-media-list {
@@ -1075,6 +1073,7 @@ a.act {
   .nav-menu {
     display: flex;
     align-items: center;
+    margin-left: 77px;
   }
 
   .nav-menu .menu-list:not(:last-child) {
@@ -1267,10 +1266,6 @@ a.act {
     max-width: 1158px;
   }
 
-  .logo {
-    margin-right: 77px;
-  }
-  
   .contacts {
     display: flex;
     align-items: center;
@@ -1376,6 +1371,10 @@ a.act {
     width: 100%;
   }
 
+  .footer-subscribe  {
+    margin-top: 0;
+  }
+
   .page-footer-container {
     margin-right: 120px;
     margin-bottom: 0;
@@ -1431,6 +1430,7 @@ a.act {
 
 .portfolio {
     padding-top: 96px;
+    padding-bottom: 120px;
 }
 
 .portfolio-box {
